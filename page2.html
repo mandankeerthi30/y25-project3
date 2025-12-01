@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Homestays & Local Attractions</title>
+  <style>
+    /* 🌅 Base Styling */
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: #fff;
+      text-align: center;
+      padding: 60px 10%;
+      overflow-x: hidden;
+    }
+
+    /* ✨ Animated Heading */
+    h1 {
+      font-size: 2.6rem;
+      margin-bottom: 40px;
+      letter-spacing: 1px;
+      animation: fadeDown 1s ease-in-out, glow 3s ease-in-out infinite;
+    }
+
+    /* 🧱 Role Cards */
+    .role {
+      margin: 25px auto;
+      padding: 25px;
+      width: 70%;
+      border-radius: 15px;
+      text-align: left;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(5px);
+      color: #fff;
+      transform: scale(0.8) translateY(50px);
+      opacity: 0;
+      animation: fadeUp 1s forwards, float 4s ease-in-out infinite;
+    }
+
+    /* 🎨 Different role colors */
+    .role:nth-child(2) {
+      background: linear-gradient(135deg, #ff7eb3, #ff758c);
+      animation-delay: 0.3s;
+    }
+    .role:nth-child(3) {
+      background: linear-gradient(135deg, #7ee8fa, #80ff72);
+      animation-delay: 0.6s;
+    }
+    .role:nth-child(4) {
+      background: linear-gradient(135deg, #f6d365, #fda085);
+      animation-delay: 0.9s;
+    }
+    .role:nth-child(5) {
+      background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+      animation-delay: 1.2s;
+      color: #333;
+    }
+
+    /* 🪄 Hover Effect */
+    .role:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px rgba(255, 255, 255, 0.4);
+      transition: all 0.3s ease;
+    }
+
+    h2 {
+      margin-bottom: 8px;
+      font-size: 1.4rem;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    /* 🔗 Back Link Button */
+    a {
+      display: inline-block;
+      margin-top: 40px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      background: rgba(255, 255, 255, 0.25);
+      padding: 12px 24px;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      background: white;
+      color: #00b4db;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+      transform: scale(1.05);
+    }
+
+    /* ⚡ Animations */
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(60px) scale(0.8); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes glow {
+      0%, 100% { text-shadow: 0 0 10px rgba(255,255,255,0.6); }
+      50% { text-shadow: 0 0 25px rgba(255,255,255,0.9); }
+    }
+  </style>
+</head>
+<body>
+  <h1> Explore Homestays & Local Attractions </h1>
+
+  <div class="role">
+    <h2>Admin</h2>
+    <p>Manage platform content, user interactions, and homestay listings.</p>
+  </div>
+
+  <div class="role">
+    <h2>Homestay Host</h2>
+    <p>List homestays, manage bookings, and interact with guests.</p>
+  </div>
+
+  <div class="role">
+    <h2>Tourist</h2>
+    <p>Search for homestays, book stays, and explore local attractions.</p>
+  </div>
+
+  <div class="role">
+    <h2>Local Guide</h2>
+    <p>Provide insights and recommendations on nearby tourism places.</p>
+  </div>
+
+  <a href="page1.html">⬅ Back to Page 1</a>
+</body>
+</html>
